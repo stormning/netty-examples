@@ -32,6 +32,7 @@ public class EchoClient {
     public void start() {
         EventLoopGroup group = new NioEventLoopGroup();
         try {
+            //一个 Bootstrap 被创建来初始化客户端
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.channel(NioSocketChannel.class)
                     .group(group)
